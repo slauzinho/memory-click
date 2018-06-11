@@ -2,6 +2,7 @@
   "name": "react-memory",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kmcfadden0741.github.io/memory-click",
   "dependencies": {
     "hover.css": "^2.3.1",
     "react": "^16.4.0",
