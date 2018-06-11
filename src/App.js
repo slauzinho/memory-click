@@ -47,7 +47,8 @@ class App extends Component {
     this.setState({
       correct: 0,
       totalGuesses: 0,
-      resetGame: true
+      resetGame: true,
+      hasClicked: false
     });
   };
 
