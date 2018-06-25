@@ -14,5 +14,5 @@
 * Can you remember which cat to click on? They are adorably purrfect...
 * Click to [view]() the live site here.
 
-https://j.gifs.com/PZkKzy.gif
+![Demo](https://lh6.googleusercontent.com/IHuAzV_4zcKk5uZO4ZnyI3KOeN3wxJ8EH9yyz4USL6LVJrkLv7InWECQenpZUP0HdQYcu5aQdL3u1WOdjFWG=w1280-h720-n-k-rw)
 
