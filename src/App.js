@@ -104,6 +104,7 @@ class App extends Component {
           />
         ))}
 
+        <Score />
         <Footer />
       </div>
     );

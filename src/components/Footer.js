@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Score from "./Score.js";
 
 const BottomFooter = styled.div`
   width: 100%;
   height: 80px;
   background-color: #420742;
-  margin-top: 800px;
+  margin-top: 600px;
 `;
 
 const FooterText = styled.p`
@@ -15,7 +16,7 @@ const FooterText = styled.p`
   font-family: Roboto;
 `;
 
-const Footer = props => {
+const Footer = (props, correct, totalGuesses) => {
   return (
     <BottomFooter>
       <FooterText>Copyright 2018 Kayla McFadden</FooterText>
