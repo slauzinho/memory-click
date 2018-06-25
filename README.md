@@ -12,6 +12,6 @@
 * Click all of the correct cards once to reach the goal of a 12/12 score.
 * The user will be alerted when the game is over and the score will reset. 
 * Can you remember which cat to click on? They are adorably purrfect...
-* Click to [view]() the live site here.
+* Click to [view](https://kmcfadden0741.github.io/memory-click/) the live site here.
 
-![Demo](https://user-images.githubusercontent.com/32778370/41872772-e9ed6318-7890-11e8-9296-bd1e8873039b.gif)
+![demo5](https://user-images.githubusercontent.com/32778370/41873282-89d71198-7892-11e8-8837-9396f54db575.gif)
