@@ -1,11 +1,11 @@
 # Memory-Click
 * Memory game that uses JSX, ES6 and React components. 
 
-#Description
+# Description
 * Npm package- styled-components is used to style coponents within their own js file instead of hassling with seperate CSS files. 
 * Npm package- create-react-app is used for the intial build of the application.  
 
-#Instructions
+# Instructions
 * There are twelve cards to start the game with a score beginning at zero.
 * As you begin to click on the cat cards they will shuffle randomly and generate a total incremented score.
 * If you click on the same card more than once, your user score will not increase, except to find that the total score does increase.
