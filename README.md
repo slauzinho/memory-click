@@ -14,5 +14,4 @@
 * Can you remember which cat to click on? They are adorably purrfect...
 * Click to [view]() the live site here.
 
-![Demo](https://lh6.googleusercontent.com/IHuAzV_4zcKk5uZO4ZnyI3KOeN3wxJ8EH9yyz4USL6LVJrkLv7InWECQenpZUP0HdQYcu5aQdL3u1WOdjFWG=w1280-h720-n-k-rw)
-
+![Demo](https://user-images.githubusercontent.com/32778370/41872772-e9ed6318-7890-11e8-9296-bd1e8873039b.gif)
