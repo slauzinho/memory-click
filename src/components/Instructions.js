@@ -3,7 +3,7 @@ import styled from "styled-components";
 import image from "../images/swirl_pattern.png";
 
 const InstructionsBackground = styled.div`
-  height: 380px;
+  height: 300px;
   width: 100%;
   font-family: Roboto;
   font-size: 60px;
@@ -24,6 +24,7 @@ const InstructionsBackground = styled.div`
 `;
 
 const GameTitle = styled.h1`
+  font-size: 90px;
   padding: 30px;
   margin: 0;
 `;

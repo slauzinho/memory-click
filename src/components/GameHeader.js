@@ -4,7 +4,7 @@ import Score from "./Score";
 import ScoreAlert from "./ScoreAlert";
 
 const Header = styled.header`
-  height: 80px;
+  height: 70px;
   width: 100%;
   opacity: 0.9;
   background-color: #420742;
