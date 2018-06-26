@@ -7,6 +7,7 @@ const BottomFooter = styled.div`
   height: 80px;
   background-color: #420742;
   margin-top: 600px;
+  position: absolute;
 `;
 
 const FooterText = styled.p`
@@ -20,6 +21,7 @@ const Footer = (props, correct, totalGuesses) => {
   return (
     <BottomFooter>
       <FooterText>Copyright 2018 Kayla McFadden</FooterText>
+      <Score correct={this.correct} totalGuesses={this.totalGuesses} />
     </BottomFooter>
   );
 };

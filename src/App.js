@@ -81,7 +81,6 @@ class App extends Component {
       this.resetGame();
     }
   };
-
   render() {
     console.log(this.state);
     return (
@@ -103,9 +102,7 @@ class App extends Component {
             onClick={() => this.allTheThings(cat.id)}
           />
         ))}
-
-        <Score />
-        <Footer />
+        <Footer correct={this.correct} totalGuesses={this.totalGuesses} />
       </div>
     );
   }
