@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-  height: 0px;
-  width: 100%;
-`;
-
 const Card = styled.div`
   background-color: none;
   border-radius: 30px;
@@ -18,6 +13,7 @@ const Card = styled.div`
   float: right;
   margin-right: 20px;
   text-align: center;
+  cursor: pointer;
 
   :hover {
     display: inline-block;
@@ -47,11 +43,9 @@ const Image = styled.img`
 
 const ImageCard = props => {
   return (
-    <Wrapper onClick={props.onClick}>
-      <Card>
+      <Card onClick={props.onClick}>
         <Image alt={props.id} src={props.image} />
       </Card>
-    </Wrapper>
   );
 };
 

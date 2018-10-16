@@ -23,7 +23,7 @@ const GameTitle = styled.button`
   margin-top: 17px;
 
   :hover {
-    background-color: #5f205f;
+    background-color: ${props => props.theme.primary};
   }
 `;
 

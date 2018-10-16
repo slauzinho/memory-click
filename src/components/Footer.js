@@ -6,7 +6,7 @@ const BottomFooter = styled.div`
   width: 100%;
   height: 80px;
   background-color: #420742;
-  margin-top: 600px;
+  margin-top: 70px;
   position: absolute;
 `;
 

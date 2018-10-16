@@ -1,14 +1,33 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 import GameHeader from "./components/GameHeader";
 import Instructions from "./components/Instructions";
-import ScoreAlert from "./components/ScoreAlert";
-import Score from "./components/Score";
 import ImageCard from "./components/ImageCard";
 import Footer from "./components/Footer";
 import cats from "./cats.js";
-import logo from "./images/logo.svg";
-import "./App.css";
+
+const theme = {
+  primary: "#5f205f",
+  secondary: "#282828"
+};
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    color: ${props => (props.whiteColor ? "white" : "black")};
+    font-family: Roboto;
+    font-size: 60px;
+    color: red;
+  }
+`;
+
+const GameContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+
+  @media (max-width: );
+`;
 
 // Algorithm for shuffling cards
 const shuffle = arr => {
@@ -82,28 +101,32 @@ class App extends Component {
     }
   };
   render() {
-    console.log(this.state);
     return (
-      <div className="App">
-        <GameHeader
-          correct={this.state.correct}
-          totalGuesses={this.state.totalGuesses}
-          wasCorrect={this.state.wasCorrect}
-          hasClicked={this.state.hasClicked}
-          resetGame={this.state.resetGame}
-          winOrLose={this.state.winOrLose}
-        />
-        <Instructions />
-        {this.state.cats.map((cat, count) => (
-          <ImageCard
-            key={cat.id}
-            id={cat.id}
-            image={cat.image}
-            onClick={() => this.allTheThings(cat.id)}
+        <ThemeProvider theme={theme}>
+      <div>
+          <GameHeader
+            correct={this.state.correct}
+            totalGuesses={this.state.totalGuesses}
+            wasCorrect={this.state.wasCorrect}
+            hasClicked={this.state.hasClicked}
+            resetGame={this.state.resetGame}
+            winOrLose={this.state.winOrLose}
           />
-        ))}
-        <Footer correct={this.correct} totalGuesses={this.totalGuesses} />
+          <Instructions />
+          <GameContainer>
+            {this.state.cats.map((cat, count) => (
+              <ImageCard
+                key={cat.id}
+                id={cat.id}
+                image={cat.image}
+                onClick={() => this.allTheThings(cat.id)}
+              />
+            ))}
+          </GameContainer>
+          <Footer correct={this.correct} totalGuesses={this.totalGuesses} />
+          <GlobalStyle whiteColor />
       </div>
+        </ThemeProvider>
     );
   }
 }

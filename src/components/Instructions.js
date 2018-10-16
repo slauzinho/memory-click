@@ -3,12 +3,9 @@ import styled from "styled-components";
 import image from "../images/swirl_pattern.png";
 
 const InstructionsBackground = styled.div`
-  height: 300px;
   width: 100%;
-  font-family: Roboto;
-  font-size: 60px;
-  color: #5f205f;
-  position: relative;
+  color: ${props => props.theme.primary};
+  text-align: center;
 
   &::after {
     content: "";
@@ -32,7 +29,7 @@ const GameTitle = styled.h1`
 const InstructionsText = styled.p`
   margin-top: 29px;
   font-size: 20px;
-  color: #282828;
+  color: ${props => props.theme.secondary};
 `;
 const Instructions = props => {
   return (
